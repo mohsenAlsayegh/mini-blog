@@ -12,6 +12,6 @@ def post_detail():
 
 
 
-class CommentsList(ListView):
-    queryset = Comments.objects.all()
-    template_name = 'comments/comments_list.html'
+# class CommentsList(ListView):
+#     queryset = Comments.objects.all()
+#     template_name = 'comments/comments_list.html'
