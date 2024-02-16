@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     #libraries
     "taggit",
     'django_summernote',
+     "django_bootstrap5",
     
-    #app
+    #main_app
     'blog',
 ]
 

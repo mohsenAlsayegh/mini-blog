@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from taggit.managers import TaggableManager
-from django.utils.text import slugify
+
+
 
 
 
@@ -20,7 +21,7 @@ class Post(models.Model):
     
 class Comments(models.Model):
     post = models.ForeignKey(Post, related_name= 'comment_post',on_delete =models.CASCADE)
-    user = models.ForeignKey(User, related_name='comment_user', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='comment_user', on_delete=models.CASCADE,null=True, blank=True)
     comment = models.TextField(max_length = 200)
     created_at = models.DateTimeField(auto_now_add=True)
     
