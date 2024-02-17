@@ -8,14 +8,7 @@ one page:
         - title
         - content
         - draft
-        - publish date
-        - tags
-        - image
 
-
-
-
-    
     - Comments:
      - post
      - user
